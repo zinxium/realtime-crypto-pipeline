@@ -1,0 +1,4 @@
+.env
+data/
+gcp_credentials.json
+dbt_internal_packages/
