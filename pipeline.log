@@ -1,0 +1,32 @@
+2026-05-21 16:15:22,258 [INFO] === Démarrage du pipeline crypto ===
+2026-05-21 16:15:22,261 [INFO] Snowflake Connector for Python Version: 4.5.0, Python Version: 3.14.0, Platform: Windows-11-10.0.26200-SP0
+2026-05-21 16:15:22,262 [INFO] Connecting to GLOBAL Snowflake domain
+2026-05-21 16:16:24,242 [INFO] === Démarrage du pipeline crypto ===
+2026-05-21 16:16:24,242 [INFO] Snowflake Connector for Python Version: 4.5.0, Python Version: 3.14.0, Platform: Windows-11-10.0.26200-SP0
+2026-05-21 16:16:24,243 [INFO] Connecting to GLOBAL Snowflake domain
+2026-05-21 16:16:26,481 [INFO] Connecté à Snowflake
+2026-05-21 16:16:26,481 [INFO] --- Run 1/5 ---
+2026-05-21 16:16:26,481 [INFO] Appel API CoinGecko...
+2026-05-21 16:16:27,297 [INFO]   3 cryptos récupérées
+2026-05-21 16:16:28,953 [ERROR]   Erreur run 1 : 252004: 252004: Failed processing pyformat-parameters: 255001: 255001: Binding data in type (dict) is not supported.
+2026-05-21 16:16:28,954 [INFO]   Attente 60s avant le prochain run...
+2026-05-21 16:17:28,954 [INFO] --- Run 2/5 ---
+2026-05-21 16:17:28,954 [INFO] Appel API CoinGecko...
+2026-05-21 16:17:30,217 [INFO]   3 cryptos récupérées
+2026-05-21 16:17:31,237 [ERROR]   Erreur run 2 : 252004: 252004: Failed processing pyformat-parameters: 255001: 255001: Binding data in type (dict) is not supported.
+2026-05-21 16:17:31,237 [INFO]   Attente 60s avant le prochain run...
+2026-05-21 16:18:31,237 [INFO] --- Run 3/5 ---
+2026-05-21 16:18:31,238 [INFO] Appel API CoinGecko...
+2026-05-21 16:18:32,002 [INFO]   3 cryptos récupérées
+2026-05-21 16:18:33,226 [ERROR]   Erreur run 3 : 252004: 252004: Failed processing pyformat-parameters: 255001: 255001: Binding data in type (dict) is not supported.
+2026-05-21 16:18:33,227 [INFO]   Attente 60s avant le prochain run...
+2026-05-21 16:19:33,227 [INFO] --- Run 4/5 ---
+2026-05-21 16:19:33,228 [INFO] Appel API CoinGecko...
+2026-05-21 16:19:34,183 [INFO]   3 cryptos récupérées
+2026-05-21 16:19:35,213 [ERROR]   Erreur run 4 : 252004: 252004: Failed processing pyformat-parameters: 255001: 255001: Binding data in type (dict) is not supported.
+2026-05-21 16:19:35,213 [INFO]   Attente 60s avant le prochain run...
+2026-05-21 16:20:35,214 [INFO] --- Run 5/5 ---
+2026-05-21 16:20:35,214 [INFO] Appel API CoinGecko...
+2026-05-21 16:20:36,133 [INFO]   3 cryptos récupérées
+2026-05-21 16:20:38,249 [ERROR]   Erreur run 5 : 252004: 252004: Failed processing pyformat-parameters: 255001: 255001: Binding data in type (dict) is not supported.
+2026-05-21 16:20:38,996 [INFO] === Pipeline terminé. Connexion fermée. ===
