@@ -3,7 +3,6 @@
 -- ============================================================
 
 USE DATABASE ECOMMERCE_DB;
-USE SCHEMA RAW;
 
 -- ── Vue de monitoring qualité ────────────────────────────────
 CREATE OR REPLACE VIEW ANALYTICS.DATA_QUALITY_REPORT AS
@@ -15,7 +14,7 @@ SELECT
     SUM(CASE WHEN order_status IS NULL THEN 1 END)  AS null_statuses,
     COUNT(DISTINCT order_id)                        AS unique_orders,
     COUNT(*) - COUNT(DISTINCT order_id)             AS duplicate_orders
-FROM RAW_ORDERS
+FROM RAW.RAW_ORDERS
 
 UNION ALL
 
@@ -27,7 +26,7 @@ SELECT
     SUM(CASE WHEN customer_state IS NULL THEN 1 END)        AS null_statuses,
     COUNT(DISTINCT customer_id)                             AS unique_orders,
     COUNT(*) - COUNT(DISTINCT customer_id)                  AS duplicate_orders
-FROM RAW_CUSTOMERS
+FROM RAW.RAW_CUSTOMERS
 
 UNION ALL
 
@@ -39,7 +38,7 @@ SELECT
     SUM(CASE WHEN last_updated IS NULL THEN 1 END)      AS null_statuses,
     COUNT(DISTINCT id)                                  AS unique_orders,
     0                                                   AS duplicate_orders
-FROM RAW_CRYPTO_PRICES;
+FROM RAW.RAW_CRYPTO_PRICES;
 
 -- ── Vérification des résultats ───────────────────────────────
 SELECT * FROM ANALYTICS.DATA_QUALITY_REPORT;
